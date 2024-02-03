@@ -1,0 +1,18 @@
+targets:
+  $default:
+    builders:
+      source_gen|combining_builder:
+        enabled: true
+        options:
+          ignore_for_file:
+            - lint
+            - implicit_dynamic_parameter
+            - implicit_dynamic_type
+      json_serializable:
+        # Options configure how source code is generated for every
+        # `@JsonSerializable`-annotated class in the package.
+        options:
+          explicit_to_json: true
+      reflectable:
+        generate_for:
+          - lib/main_*

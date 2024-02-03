@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1003664717970",
+    "firebase_url": "https://it-jokes-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "it-jokes-app",
+    "storage_bucket": "it-jokes-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003664717970:android:6b4580c0a5c3e994248e4b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_joke_app_mmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003664717970-pnfmvtnu7uvi01n53i8fn1jf9c2i46o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNcDguVJ6nTD-LcrRHjBLa7Ap1bYesENU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003664717970-0cestaqth6j1k3et5i9lidjo46fsoqmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
