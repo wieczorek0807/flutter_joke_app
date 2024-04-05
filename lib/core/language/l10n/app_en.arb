@@ -1,0 +1,12 @@
+{
+  "appTitle" : "IT jokes",
+  "menuText": "Looking for good IT humor? \nThen you've come to the right place!",
+  "singIn": "Sign in with Google",
+  "firstJoke" : "Press the button to see the first joke",
+  "pressMe" : "Press me",
+  "nextOne" : "Give me the next one",
+  "addedToFavourites" : "Joke added to Favourites!",
+  "addToFavourites" : "add to Favorites",
+  "home" : "Jokes",
+  "favourites" : "Favorites"
+}

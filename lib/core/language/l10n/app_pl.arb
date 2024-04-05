@@ -1,0 +1,12 @@
+{
+  "appTitle" : "IT jokes",
+  "menuText": "Szukasz dobrego humoru IT? \nW takim razie trafiłeś we właściwe miejsce!",
+  "singIn": "Zaloguj przy pomocy Google",
+  "firstJoke" : "Naciśnij aby wyświetlić pierwszy żart",
+  "pressMe" : "Naciśnij mnie",
+  "nextOne" : "Wyświetl kolejny",
+  "addedToFavourites" : "Żart dodany do ulobuonych!",
+  "addToFavourites" : "dodaj do ulubionych",
+  "home" : "Żarty",
+  "favourites" : "Ulubione"
+}

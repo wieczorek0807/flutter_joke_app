@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_joke_app_mmi/firebase_options.dart';
-import 'package:flutter_joke_app_mmi/presentation/bloc/change_page/change_page_cubit.dart';
-import 'package:flutter_joke_app_mmi/presentation/bloc/favourite/favourite_cubit.dart';
-import 'package:flutter_joke_app_mmi/presentation/bloc/joke/joke_cubit.dart';
-import 'package:flutter_joke_app_mmi/presentation/bloc/view_for_elderty/view_for_elderty_cubit.dart';
-import 'package:flutter_joke_app_mmi/presentation/bloc/view_for_elderty/view_for_elderty_state.dart';
-import 'package:flutter_joke_app_mmi/presentation/pages/login_page.dart';
-import 'package:firebase_core/firebase_core.dart';
-
-import 'presentation/bloc/login/auth_cubit.dart';
+import 'package:flutter_joke_app_mmi/core/presentation/providers/global_provider.dart';
+import 'package:flutter_joke_app_mmi/core/router/app_router.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_joke_app_mmi/core/injection/injection_container.dart' as injection_container;
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await injection_container.setup();
   runApp(const JokeApp());
 }
 
@@ -22,26 +14,13 @@ class JokeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-        providers: [
-          BlocProvider<ViewForEldertyCubit>(
-              create: (context) => ViewForEldertyCubit()),
-          BlocProvider<ChangePageCubit>(create: (context) => ChangePageCubit()),
-          BlocProvider<JokeCubit>(create: (context) => JokeCubit()),
-          BlocProvider<AuthCubit>(create: (context) => AuthCubit()),
-          BlocProvider<FavouriteCubit>(create: (context) => FavouriteCubit())
-        ],
-        child: BlocBuilder<ViewForEldertyCubit, ViewForEldertyState>(
-          builder: (context, state) {
-            return MaterialApp(
-              theme: state.currentTheme,
-              home: const Scaffold(
-                body: LoginPage(),
-              ),
-
-              //
-            );
-          },
-        ));
+    AppRouter appRouter = AppRouter();
+    return GlobalProvider(
+      child: MaterialApp.router(
+        routerConfig: appRouter.config(),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+      ),
+    );
   }
 }

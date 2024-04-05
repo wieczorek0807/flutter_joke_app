@@ -8,12 +8,49 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1003664717970:android:58a8eb2a2ea7e87b248e4b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_joke_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003664717970-pnfmvtnu7uvi01n53i8fn1jf9c2i46o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNcDguVJ6nTD-LcrRHjBLa7Ap1bYesENU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003664717970-0cestaqth6j1k3et5i9lidjo46fsoqmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1003664717970:android:6b4580c0a5c3e994248e4b",
         "android_client_info": {
           "package_name": "com.example.flutter_joke_app_mmi"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1003664717970-td7dfrgeh2n3b8kab9k5afqvhek44j5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_joke_app_mmi",
+            "certificate_hash": "ee9f6d347c66d509e558c30fe08989d7bd92a4f6"
+          }
+        },
         {
           "client_id": "1003664717970-pnfmvtnu7uvi01n53i8fn1jf9c2i46o3.apps.googleusercontent.com",
           "client_type": 3
