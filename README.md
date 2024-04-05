@@ -1,7 +1,7 @@
 # Flutter Joke App
 
-This simple IT-themed jokes app was created for a student project. The application provides various functionalities using Firebase, including Firebase Authentication for user login, fetching jokes from Firebase Database, and saving favorite jokes to Firebase Database. In addition, the app has a button to enlarge the UI to adjust to users with visual disabilities.
-[Jokes source:](https://v2.jokeapi.dev/) 
+This simple IT-themed jokes app was created for a student project. The application provides various functionalities using Firebase, including Firebase Authentication for user login, fetching jokes from Firebase Database, and saving favorite jokes to Firebase Database. In addition, the app has a button to enlarge the UI to adjust to users with visual disabilities. <br />
+[Jokes source](https://v2.jokeapi.dev/) 
 ## Tech Stack
 - Bloc/Cubit
 - Firebase Database
